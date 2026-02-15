@@ -7,4 +7,4 @@ class TaskCreateAPIView(CreateAPIView):
     serializer_class = TaskCreateSerializer
 
     def perform_create(self, serializer):
-        serializer.save(is_done=True)
+        serializer.save(is_done=False)
